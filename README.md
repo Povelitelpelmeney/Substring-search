@@ -2,7 +2,7 @@
 There is a comparison of 5 substring search algorithms:
 1. BruteForce
 2. Apostolico-Crochemore
-3. KnuthMorrisPratt
+3. Knuth-Morris-Pratt
 4. Z-function
 5. DeterministicFiniteAutomaton
 ### Benchmark
