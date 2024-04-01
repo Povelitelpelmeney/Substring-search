@@ -20,14 +20,19 @@ test3_answer = load_answers('tests/test_answers/test3_answer.txt')
 test4 = load_texts('tests/test_texts/test4.txt')
 test4_answer = load_answers('tests/test_answers/test4_answer.txt')
 test5 = load_texts('tests/test_texts/test5.txt')
+test5_substring = load_texts('tests/test_texts/test5_substring.txt')
 test5_answer = load_answers('tests/test_answers/test5_answer.txt')
+test6 = load_texts('tests/test_texts/test6.txt')
+test6_substring = load_texts('tests/test_texts/test6_substring.txt')
+test6_answer = load_answers('tests/test_answers/test6_answer.txt')
 
 tests = dict()
 tests['first'] = [test1, 'север ', test1_answer]
 tests['second'] = [test2, 'DEF', test2_answer]
 tests['third'] = [test3, '342765', test3_answer]
 tests['fourth'] = [test4, '78', test4_answer]
-tests['fifth'] = [test5, 'ACAATTAATTGCCAGGAACCTAA', test5_answer]
+tests['fifth'] = [test5, test5_substring, test5_answer]
+tests['sixth'] = [test6, test6_substring, test6_answer]
 
 
 class TestAlgorithms(unittest.TestCase):
