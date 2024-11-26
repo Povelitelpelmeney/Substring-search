@@ -25,6 +25,9 @@ test5_answer = load_answers('tests/test_answers/test5_answer.txt')
 test6 = load_texts('tests/test_texts/test6.txt')
 test6_substring = load_texts('tests/test_texts/test6_substring.txt')
 test6_answer = load_answers('tests/test_answers/test6_answer.txt')
+test7 = load_texts('tests/test_texts/test7.txt')
+test7_substring = load_texts('tests/test_texts/test7_substring.txt')
+test7_answer = load_answers('tests/test_answers/test7_answer.txt')
 
 tests = dict()
 tests['first'] = [test1, 'север ', test1_answer]
@@ -33,7 +36,7 @@ tests['third'] = [test3, '342765', test3_answer]
 tests['fourth'] = [test4, '78', test4_answer]
 tests['fifth'] = [test5, test5_substring, test5_answer]
 tests['sixth'] = [test6, test6_substring, test6_answer]
-
+tests['seventh'] = [test7, test7_substring, test7_answer]
 
 class TestAlgorithms(unittest.TestCase):
 
